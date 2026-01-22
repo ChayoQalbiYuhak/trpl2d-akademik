@@ -1,9 +1,11 @@
-<?php 
-    $host = "localhost";
-    $user = "root";
+<?php
+    $server = "localhost";
+    $username = "root";
     $password = "";
-    $db = "db_akademik";
+    $database = "db_akademik";
 
-    $koneksi = new mysqli($host, $user, $password, $db); //open connection
-
+    $koneksi = new mysqli($server, $username, $password, $database);
+    if (!$koneksi) {
+        echo "Koneksi Gagal: ";
+    }
 ?>
